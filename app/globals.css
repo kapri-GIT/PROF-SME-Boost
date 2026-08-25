@@ -17,7 +17,17 @@ body { margin:0; background:var(--background); color:var(--foreground); font-fam
 .stub-card p { margin:5px 0 0; color:#7c8e9f; font-size:11px; line-height:1.5; }
 .status-dot { display:inline-block; width:7px; height:7px; margin-right:5px; border-radius:50%; background:#f0aa58; }
 .status-dot.ready { background:#19aa93; }
-@media (max-width:700px) { .integration-note { font-size:10px; } }
+.dark { color-scheme: dark; --background:#0c1726; --foreground:#e7f0f7; --card:#122338; --card-foreground:#e7f0f7; --primary:#25cbbb; --primary-foreground:#07131f; --muted:#172c42; --muted-foreground:#9bb0c3; --border:#28435b; --input:#28435b; --line:#28435b; --ink:#eef7fb; --navy:#52d6ca; --teal:#25cbbb; --slate:#a1b4c6; }
+.dark .sidebar,.dark .topbar,.dark .metric-card,.dark .panel,.dark .feature-card,.dark .legal-card,.dark .legal-page article { background:var(--card); color:var(--foreground); }
+.dark .workspace,.dark .support,.dark .secondary-button,.dark .stub-card { background:#172c42; color:var(--foreground); }
+.dark nav button:hover,.dark nav button.active { background:#173e4b; color:#e7f0f7; }
+.dark .integration-note { background:#12383b; color:#a9e6df; border-color:#247d76; }
+.theme-toggle,.role-switch select { border:1px solid var(--line); border-radius:7px; background:var(--card); color:var(--slate); padding:7px 9px; }
+.role-switch select { font-size:10px; padding:7px 8px; }
+.legal-footer { display:flex; flex-wrap:wrap; gap:9px; padding:18px 4.3% 28px; color:#8193a5; font-size:10px; }
+.legal-footer a { color:inherit; text-decoration:none; }.legal-footer a:hover { color:var(--teal); }
+.legal-wrap { min-height:100vh; padding:48px max(5vw,24px); background:var(--background); color:var(--foreground); }.legal-page { max-width:980px; margin:auto; }.legal-wrap h1,.legal-page h1 { color:var(--ink); letter-spacing:-.04em; }.legal-wrap p,.legal-page p { max-width:760px; line-height:1.7; color:var(--slate); }.legal-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin-top:28px; }.legal-page article { border:1px solid var(--line); border-radius:9px; padding:18px; background:var(--card); }.legal-page article h2 { color:var(--ink); font-size:14px; }.legal-page article a { color:var(--teal); font-size:11px; }
+@media (max-width:700px) { .integration-note { font-size:10px; }.legal-grid { grid-template-columns:1fr; }.role-switch { display:none; } }
 button,input,select { font:inherit; }
 button { cursor:pointer; }
 .app-shell { min-height:100vh; display:flex; }
