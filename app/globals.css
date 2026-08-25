@@ -8,6 +8,16 @@
 :root { color-scheme: light; --background:#f5f8fb; --foreground:#12253d; --card:#ffffff; --card-foreground:#12253d; --primary:#153e75; --primary-foreground:#ffffff; --muted:#f0f4f8; --muted-foreground:#718096; --border:#e1e9f1; --input:#e1e9f1; --ring:#14b8a6; --radius:0.75rem; --navy:#153e75; --teal:#14b8a6; --ink:#12253d; --slate:#718096; --line:#e1e9f1; --orange:#ed9b55; --violet:#7769b1; }
 * { box-sizing:border-box; border-color:var(--border); }
 body { margin:0; background:var(--background); color:var(--foreground); font-family:var(--font-sans); }
+.integration-note { margin:0 0 17px; padding:12px 14px; border:1px dashed #9bd8d2; border-radius:9px; background:#effaf8; color:#286d6b; font-size:11px; line-height:1.5; }
+.integration-note strong { color:var(--navy); }
+.integration-note code { padding:2px 5px; border-radius:4px; background:#dff3f0; font-family:var(--font-mono); font-size:10px; }
+.stub-card { min-height:100px; display:flex; align-items:flex-start; gap:12px; padding:16px; border:1px dashed #b9cbd8; border-radius:9px; background:#fbfdfe; }
+.stub-card svg { color:var(--teal); flex:none; }
+.stub-card strong { display:block; color:var(--ink); font-size:12px; }
+.stub-card p { margin:5px 0 0; color:#7c8e9f; font-size:11px; line-height:1.5; }
+.status-dot { display:inline-block; width:7px; height:7px; margin-right:5px; border-radius:50%; background:#f0aa58; }
+.status-dot.ready { background:#19aa93; }
+@media (max-width:700px) { .integration-note { font-size:10px; } }
 button,input,select { font:inherit; }
 button { cursor:pointer; }
 .app-shell { min-height:100vh; display:flex; }
